@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCubo: {fileID: 967730494}
-  scriptCubo2: {fileID: 1561139674}
+  scriptCubo2: {fileID: 0}
   cambioColor5: 0
 --- !u!65 &574504909
 BoxCollider:
@@ -1100,12 +1100,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1561139669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ae2afd3b3e6904e95af594f2afc98f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cc8b4510c089c140b8acb802da65245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptesfera: {fileID: 1726114800}
-  scriptcapsula: {fileID: 1324334181}
-  cambioColor4: 0
+  colorPString: 
 --- !u!1 &1726114796
 GameObject:
   m_ObjectHideFlags: 0
