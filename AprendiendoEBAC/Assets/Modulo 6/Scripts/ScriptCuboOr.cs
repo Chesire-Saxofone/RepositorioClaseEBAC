@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scriptesfera : MonoBehaviour
+public class ScriptCuboOr : MonoBehaviour
 {
-    public bool CambioColor;
+    public Scriptesfera scriptesfera;
+    public ScriptCapsula scriptcapsula;
+    public bool cambioColor4;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,25 +18,21 @@ public class Scriptesfera : MonoBehaviour
     {
         
     }
-
     private void FixedUpdate()
     {
-        if (CambioColor) { 
-        CambioColor = false;
+        if (scriptesfera.CambioColor == true || scriptcapsula.CambioColor2 == true)
+        {
+            cambioColor4 = false;
             var meshrendermaterial = GetComponent<MeshRenderer>().material;
             Color c = Color.white;
             meshrendermaterial.color = c;
         }
         else
         {
-            CambioColor = true;
+            cambioColor4 = true;
             var meshrendermaterial = GetComponent<MeshRenderer>().material;
             Color c = Color.black;
             meshrendermaterial.color = c;
         }
-
-        //var meshrendermaterial = GetComponent<MeshRenderer>().material;
-        //Color c = new Color(Random.value, Random.value, Random.value);
-        //meshrendermaterial.color = c;
     }
 }
